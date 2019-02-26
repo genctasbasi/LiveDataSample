@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout
-        xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <data>
-        <variable name="viewmodel" type="com.escmobile.livedatasample.MyViewModel"/>
-    </data>
-
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:padding="16dp"
-                  android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:padding="16dp"
+              android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
 
         <TextView
                 android:id="@+id/text_view"
@@ -17,7 +11,7 @@
                 style="?android:textAppearanceLarge"
                 android:padding="8dp"
                 android:background="#22FF0000"
-                android:text="@{viewmodel.bindingText}"
+
         />
 
         <Button
@@ -30,5 +24,3 @@
                 android:textStyle="bold"/>
 
     </LinearLayout>
-
-</layout>
